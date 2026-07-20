@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SF TOPUP</title>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Up Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🎮 SF TOPUP</h1>
-  <p>Welcome to my Gaming Top-up Website</p>
+    <div class="container">
+        <h1>Mobile Top-Up</h1>
 
-  <script src="script.js"></script>
+        <form id="topupForm">
+
+            <label>মোবাইল নাম্বার</label>
+            <input type="text" placeholder="01XXXXXXXXX" required>
+
+            <label>অপারেটর নির্বাচন করুন</label>
+            <select required>
+                <option value="">অপারেটর নির্বাচন করুন</option>
+                <option>Grameenphone</option>
+                <option>Robi</option>
+                <option>Banglalink</option>
+                <option>Teletalk</option>
+            </select>
+
+            <label>টাকার পরিমাণ</label>
+            <input type="number" placeholder="৳ Amount" required>
+
+            <button type="submit">Top-Up করুন</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
